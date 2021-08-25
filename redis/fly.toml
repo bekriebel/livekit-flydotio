@@ -1,0 +1,14 @@
+# fly.toml file generated for livekit-redis on 2021-08-04T20:02:51-07:00
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+allowed_public_ports = []
+auto_rollback = true
+
+[[mounts]]
+source = "livekit_redis"
+destination = "/data"
