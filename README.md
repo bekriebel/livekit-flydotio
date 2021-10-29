@@ -16,7 +16,7 @@ A functioning [Docker](https://www.docker.com/) installation on the machine you 
 ## Launch redis on Fly
 1. Switch to the [redis](redis/) folder and review the configuration files. No changes should be needed.
 1. Init a new Fly app for redis  
-  `fly init --nowrite`
+  `fly launch --nowrite`
 1. Create an app name, or let one be auto-generated. Remember this name for later steps, indicated with \<REDIS_APP_NAME\>
 1. Determine your primary region, listed as **Region Pool**. Remember this for later steps, indicated with \<REGION\>  
   `fly -a <REDIS_APP_NAME> regions list`
@@ -30,7 +30,7 @@ A functioning [Docker](https://www.docker.com/) installation on the machine you 
 ## Launch LiveKit on Fly
 1. Switch to the [livekit](livekit/) folder and review the configuration files. No changes should be needed.
 1. Init a new fly app for LiveKit  
-  `fly init --nowrite`
+  `fly launch --nowrite`
 1. Create an app name, or let one be auto-generated. Remember this name for later steps, indicated with \<LIVEKIT_APP_NAME\>
 1. Set the region to match your redis app  
   `fly -a <LIVEKIT_APP_NAME> regions set <REGION>`
