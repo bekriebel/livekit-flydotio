@@ -1,5 +1,13 @@
 # Install and configure a single-node LiveKit server on Fly.io
 
+> | :warning: These instructions may no longer be valid |
+> | ----------------------------------------------------|
+>
+> Unfortunately, I began having several connectivity issues with my LiveKit cluster on Fly. I have since migrated off of the service and no longer maintain these instructions.
+>
+> This guide is still available in case it proves helpful to anyone else, but you may have difficulty hosting a LiveKit server or cluster using these steps.
+>
+
 [LiveKit](https://livekit.io/) is an open source platform for real-time communication (WebRTC) based on the [Pion](https://pion.ly/) Go WebRTC stack. This example allows you to easily run a single-node LiveKit server on [Fly.io](https://fly.io/) hosting. This can be used to run a personal server for my [LiveKit AVClient Module](https://github.com/bekriebel/fvtt-module-avclient-livekit) for [FoundryVTT](https://foundryvtt.com/).
 
 To provide a better reconnection mechanism with LiveKit, [redis](https://redis.io/) is also deployed to Fly. The redis steps can optionally be skipped, however users may not automatically reconnect if there is an interruption to the WebSocket connection during a session.
